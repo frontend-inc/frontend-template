@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { LayoutPage, AuthLayout } from 'webstudio-mui/components'
 import { Address } from 'webstudio-mui/components/shopify'
 
-const Addresses: React.FC = () => {
+const AddressPage: React.FC = () => {
 	return (
 		<LayoutPage title='Addresses'>
 			<AuthLayout>
@@ -12,4 +12,4 @@ const Addresses: React.FC = () => {
 	)
 }
 
-export default Addresses
+export default AddressPage
