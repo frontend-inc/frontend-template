@@ -1,0 +1,5 @@
+export const API_URL = process.env.NEXT_PUBLIC_API_URL
+export const API_KEY = process.env.NEXT_PUBLIC_API_KEY
+export const CLIENT_URL = process.env.NEXT_PUBLIC_CLIENT_URL
+export const SHOPIFY_DOMAIN = process.env.NEXT_PUBLIC_SHOPIFY_DOMAIN
+export const SHOPIFY_STOREFRONT_ACCESS_TOKEN = process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN
