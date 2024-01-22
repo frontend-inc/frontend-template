@@ -5639,9 +5639,9 @@ webidl-conversions@^3.0.0:
   resolved "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz"
   integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
 
-"webstudio-mui@git+https://github.com/webstudio-co/webstudio-mui-npm.git":
-  version "0.0.11"
-  resolved "git+https://github.com/webstudio-co/webstudio-mui-npm.git#eedb15fd61df59a901d80b730edc01f0017c462c"
+"webstudio-mui@git+https://github.com/webstudio-co/webstudio-mui.git":
+  version "0.0.14"
+  resolved "git+https://github.com/webstudio-co/webstudio-mui.git#92cd0c7ef6cfcab26fe6a770eb5efbe870a9e714"
   dependencies:
     "@apollo/client" "^3.8.9"
     "@emotion/react" "^11.8.2"
