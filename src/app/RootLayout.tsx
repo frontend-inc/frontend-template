@@ -11,7 +11,6 @@ import {
 } from 'webstudio-mui/context'
 import { ShopifyStore } from 'webstudio-mui/components/shopify'
 import { Alert, LayoutContainer } from 'webstudio-mui/components'
-import Head from 'next/head'
 import { CssBaseline } from '@mui/material'
 import { StyledEngineProvider } from '@mui/material/styles'
 import { 
@@ -38,57 +37,50 @@ export default function AppLayout({ children }) {
   }
     
 	return (
-		<React.Fragment>
-			<Head>
-				<title>Webstudio</title>
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no"
-				/>
-			</Head>
+    <StyledEngineProvider injectFirst>      
       <ThemeProvider>
-					<CssBaseline />
-					<ApiProvider 
-            authCookie={'authToken'} 
-            url={API_URL}
-            apiKey={ API_KEY }
-          >            
-						<AppProvider 
-              logo={LOGO}
-              clientUrl={CLIENT_URL} 
-            >
-              <AuthProvider>
-              <ShopifyStore
-                shopUrl={'/'}
-                authCookie={'shopify-customer-access-token'}
-                domain={SHOPIFY_DOMAIN}
-                storefrontAccessToken={SHOPIFY_STOREFRONT_ACCESS_TOKEN}
-              >				
-                <ScriptProvider>
-                  <ResourceProvider>
-                    <Alert />
-                    <LayoutContainer                      
-                      enableShopify
-                      enableHeader
-                      topNav                                            
-                      handleClick={handleMenuClick}
-                      mode={'light'}
-                      menuItems={[
-                        {label: 'Home', path: '/', icon: 'Home'},
-                      ]}
-                      notifications={[
-                        {text: 'Notification', path: '/', position: 0}
-                      ]}                                            
-                    >	
-                      { children }
-                    </LayoutContainer>
-                  </ResourceProvider>              
-                </ScriptProvider>			
-              </ShopifyStore>	
-              </AuthProvider>
-						</AppProvider>
-				  </ApiProvider>
-			  </ThemeProvider>
-
+        <CssBaseline />
+        <ApiProvider 
+          authCookie={'authToken'} 
+          url={API_URL}
+          apiKey={ API_KEY }
+        >            
+          <AppProvider 
+            logo={LOGO}
+            clientUrl={CLIENT_URL} 
+          >
+            <AuthProvider>
+            <ShopifyStore
+              shopUrl={'/'}
+              authCookie={'shopify-customer-access-token'}
+              domain={SHOPIFY_DOMAIN}
+              storefrontAccessToken={SHOPIFY_STOREFRONT_ACCESS_TOKEN}
+            >				
+              <ScriptProvider>
+                <ResourceProvider>
+                  <Alert />
+                  <LayoutContainer                      
+                    enableShopify
+                    enableHeader
+                    topNav                                            
+                    handleClick={handleMenuClick}
+                    mode={'light'}
+                    menuItems={[
+                      {label: 'Home', path: '/', icon: 'Home'},
+                    ]}
+                    notifications={[
+                      {text: 'Notification', path: '/', position: 0}
+                    ]}                                            
+                  >	
+                    { children }
+                  </LayoutContainer>
+                </ResourceProvider>              
+              </ScriptProvider>			
+            </ShopifyStore>	
+            </AuthProvider>
+          </AppProvider>
+        </ApiProvider>
+      </ThemeProvider>
+    </StyledEngineProvider>
 	)
 }

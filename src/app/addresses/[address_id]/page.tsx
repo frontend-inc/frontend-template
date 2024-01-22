@@ -1,7 +1,12 @@
+'use client'
 import React from 'react'
+import Address from './Address'
+import { PageProps } from 'types'
 
-export default async function Page() {  
+export default async function Page({ params }: PageProps) {  
+
+  const { address_id: addressId } = params 
   return(
-    <p>Page</p>
+    <Address addressId={ addressId } />
   )  
 }

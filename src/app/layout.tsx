@@ -1,5 +1,5 @@
 import React from 'react'
-//import RootLayout from './RootLayout'
+import RootLayout from './RootLayout'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'No-code builder for Shopify',
 }
 
-export default function RootLayout({ children }: { 
+export default function Layout({ children }: { 
   children: React.ReactNode 
 }) {
   return (
@@ -20,7 +20,9 @@ export default function RootLayout({ children }: {
         />
       </head>
       <body>
-        {children}
+        <RootLayout>
+          {children}
+        </RootLayout>
       </body>
     </html>
   )

@@ -1,10 +1,11 @@
 import React from 'react'
+import Order from './order'
 import { PageProps } from 'types'
 
 const Page = async ({ params }: PageProps) => {  
   const { order_id } = params 
   return(
-    <p>Order: { order_id } </p>
+    <Order orderId={ order_id } />
   )  
 }
 

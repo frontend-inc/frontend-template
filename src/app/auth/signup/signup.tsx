@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { LayoutPage, AuthLayout } from 'webstudio-mui/components'
 import { Signup } from 'webstudio-mui/components/shopify'

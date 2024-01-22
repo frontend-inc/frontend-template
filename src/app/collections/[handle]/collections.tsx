@@ -1,15 +1,18 @@
+'use client'
 import React from 'react'
 import { Container } from '@mui/material'
 import { LayoutPage } from 'webstudio-mui/components'
 import { CollectionHero, ProductCollection } from 'webstudio-mui/components/shopify'
-import { useRouter } from 'next/router'
 
-const CollectionDetails: React.FC = () => {
+type CollectionDetailProps = {
+  handle: string
+}
 
-  const router = useRouter()
-  const { handle } = router.query
+const CollectionDetails: React.FC<CollectionDetailProps> = (props) => {
 
-  return (
+  const { handle } = props 
+
+   return (
     <LayoutPage title={'Product Detail'}>
       <CollectionHero 
         enableOverlay

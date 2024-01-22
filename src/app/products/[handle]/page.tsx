@@ -1,10 +1,11 @@
 import React from 'react'
 import { PageProps } from 'types'
+import Products from './Products'
 
 const Page = async ({ params }: PageProps) => {  
   const { handle } = params 
   return(
-    <p>Products: { handle } </p>
+    <Products handle={handle} />
   )  
 }
 

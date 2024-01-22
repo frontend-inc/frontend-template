@@ -1,12 +1,20 @@
-import React, { useEffect } from 'react'
+'use client'
+import React from 'react'
 import { LayoutPage, AuthLayout } from 'webstudio-mui/components'
 import { Address } from 'webstudio-mui/components/shopify'
 
-const AddressPage: React.FC = () => {
+type AddressPageProps = {
+  addressId: string
+}
+
+const AddressPage: React.FC<AddressPageProps> = (props) => {
+  const { addressId } = props 
 	return (
 		<LayoutPage title='Addresses'>
 			<AuthLayout>
-				<Address />
+				<Address 
+          addressId={ addressId }
+        />
 			</AuthLayout>
 		</LayoutPage>
 	)

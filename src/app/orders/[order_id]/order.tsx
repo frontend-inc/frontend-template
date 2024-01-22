@@ -1,14 +1,23 @@
-import React, { useEffect } from 'react'
+'use client'
+import React from 'react'
 import { AuthLayout } from 'webstudio-mui/components'
 import { Order } from 'webstudio-mui/components/shopify'
 import { LayoutPage } from 'webstudio-mui/components'
 
-const OrderPage: React.FC = () => {
+type OrderPageProps = {
+  orderId: string
+}
+
+const OrderPage: React.FC<OrderPageProps> = (props) => {
+
+  const { orderId } = props
 
 	return (
 		<LayoutPage title={'Webstudio'}>
 			<AuthLayout>
-				<Order />
+				<Order 
+          orderId={orderId}
+        />
 			</AuthLayout>
 		</LayoutPage>
 	)

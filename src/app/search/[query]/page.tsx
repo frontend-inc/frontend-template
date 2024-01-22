@@ -1,11 +1,10 @@
 import React from 'react'
 import { PageProps } from 'types'
+import Search from './Search'
 
-const Page = async ({ params }: PageProps) => {  
+export default async function SearchPage({ params }: PageProps) {  
   const { query } = params 
   return(
-    <p>Search: { query } </p>
+    <Search query={ query } />
   )  
 }
-
-export default Page 

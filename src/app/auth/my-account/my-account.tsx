@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react'
+'use client'
+
+import React from 'react'
 import { LayoutPage, AuthLayout } from 'webstudio-mui/components'
 import { MyAccount } from 'webstudio-mui/components/shopify'
 
