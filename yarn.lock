@@ -5694,8 +5694,8 @@ webidl-conversions@^3.0.0:
     yup "^1.0.2"
 
 "webstudio-shopify@git+https://github.com/webstudio-co/webstudio-shopify.git":
-  version "0.0.3"
-  resolved "git+https://github.com/webstudio-co/webstudio-shopify.git#f855f103c91761f0a424234ff5f108485ae54adb"
+  version "0.0.4"
+  resolved "git+https://github.com/webstudio-co/webstudio-shopify.git#8b3bc4e8e3afeb78bb96e9ffb0be7ddc5ad0ee25"
   dependencies:
     "@apollo/client" "^3.8.9"
     apollo-link-context "^1.0.20"
