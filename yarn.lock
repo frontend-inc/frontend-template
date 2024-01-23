@@ -5640,8 +5640,8 @@ webidl-conversions@^3.0.0:
   integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
 
 "webstudio-mui@git+https://github.com/webstudio-co/webstudio-mui.git":
-  version "0.0.17"
-  resolved "git+https://github.com/webstudio-co/webstudio-mui.git#65f16ea518bb9b7c20d9246ba7d7764364030777"
+  version "0.0.21"
+  resolved "git+https://github.com/webstudio-co/webstudio-mui.git#8665d1b2c4989213318e4861ed9c08dcacbfdd58"
   dependencies:
     "@apollo/client" "^3.8.9"
     "@emotion/react" "^11.8.2"
