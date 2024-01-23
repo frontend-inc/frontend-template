@@ -21,9 +21,8 @@ import {
 } from 'lib/constants'
 import 'react-multi-carousel/lib/styles.css'
 import 'react-medium-image-zoom/dist/styles.css'
-import LOGO from 'assets/logo.svg'
-import { muiTheme } from 'webstudio-mui/theme'
 import { useRouter } from 'next/router'
+import LOGO from 'assets/logo.svg'
 
 export default function NextJs({ Component, pageProps }) {
 	useEffect(() => {

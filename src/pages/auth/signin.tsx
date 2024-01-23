@@ -1,13 +1,13 @@
 import React from 'react'
 import { LayoutPage, AuthLayout } from 'webstudio-mui/components'
-import { Login } from 'webstudio-mui/components/shopify'
+import { SignIn } from 'webstudio-mui/components/shopify'
 
-const LoginPage: React.FC = () => {
+const SignInPage: React.FC = () => {
 
 	return (
 		<LayoutPage title="Webstudio | Login">
 			<AuthLayout>
-				<Login
+				<SignIn
 					signupUrl={`signup`}
 					redirectUrl={`/`}
 					forgotPasswordUrl={`/forgot-password`}
@@ -17,4 +17,4 @@ const LoginPage: React.FC = () => {
 	)
 }
 
-export default LoginPage
+export default SignIn
