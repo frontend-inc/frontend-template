@@ -1,8 +1,8 @@
-# Webstudio React App
+# Frontend React App
 
-Webstudio is a low-code platform for rapidly building scalable, production ready REST and GraphQL APIs.
+Frontend is a low-code platform for rapidly building scalable, production ready REST and GraphQL APIs.
 
-Webstudio is built using Material UI v5 and a Rails 6.
+Frontend is built using Material UI v5 and a Rails 6.
 
 ## Getting Started
 

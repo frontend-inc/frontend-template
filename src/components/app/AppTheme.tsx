@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { EditorContext } from 'context'
-import { ThemeProvider } from 'webstudio-mui/context'
+import { ThemeProvider } from 'frontend-mui/context'
 
 type AppThemeProps = {
 	app: any

@@ -1,13 +1,13 @@
 import React from 'react'
-import { AppProvider, ApiProvider, AuthProvider } from 'webstudio-mui/context'
+import { AppProvider, ApiProvider, AuthProvider } from 'frontend-mui/context'
 import {
 	AuthModal,
 	LayoutContainer,
 	LayoutLoader,
 	LayoutPage,
 	Footer,
-} from 'webstudio-mui/components'
-import { ShopifyStore } from 'webstudio-mui/components/shopify'
+} from 'frontend-mui/components'
+import { ShopifyStore } from 'frontend-mui/components/shopify'
 import { API_URL, USER_AUTH_SERVER_PATH } from 'lib/constants'
 import { useRouter } from 'next/router'
 import AppTheme from './AppTheme'

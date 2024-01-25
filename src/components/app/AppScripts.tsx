@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { ScriptProvider } from 'webstudio-mui/context'
+import { ScriptProvider } from 'frontend-mui/context'
 
 type AppScriptsProps = {
 	app: any

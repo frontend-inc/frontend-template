@@ -6,9 +6,9 @@ import {
 	ResourceProvider,
   ScriptProvider,
   ThemeProvider
-} from 'webstudio-mui/context'
-import { ShopifyStore } from 'webstudio-mui/components/shopify'
-import { Alert, LayoutContainer } from 'webstudio-mui/components'
+} from 'frontend-mui/context'
+import { ShopifyStore } from 'frontend-mui/components/shopify'
+import { Alert, LayoutContainer } from 'frontend-mui/components'
 import Head from 'next/head'
 import { CssBaseline } from '@mui/material'
 import { StyledEngineProvider } from '@mui/material/styles'
@@ -41,7 +41,7 @@ export default function NextJs({ Component, pageProps }) {
 	return (
 		<React.Fragment>
 			<Head>
-				<title>Webstudio</title>
+				<title>Frontend</title>
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no"

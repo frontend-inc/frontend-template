@@ -5639,9 +5639,9 @@ webidl-conversions@^3.0.0:
   resolved "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz"
   integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
 
-"webstudio-mui@git+https://github.com/webstudio-co/webstudio-mui.git":
+"frontend-mui@git+https://github.com/frontend-inc/frontend-mui.git":
   version "0.0.21"
-  resolved "git+https://github.com/webstudio-co/webstudio-mui.git#8665d1b2c4989213318e4861ed9c08dcacbfdd58"
+  resolved "git+https://github.com/frontend-inc/frontend-mui.git#8665d1b2c4989213318e4861ed9c08dcacbfdd58"
   dependencies:
     "@apollo/client" "^3.8.9"
     "@emotion/react" "^11.8.2"
@@ -5690,12 +5690,12 @@ webidl-conversions@^3.0.0:
     use-debounce "^10.0.0"
     util "^0.11.1"
     uuid "^8.3.2"
-    webstudio-shopify "git+https://github.com/webstudio-co/webstudio-shopify.git"
+    frontend-shopify "git+https://github.com/frontend-inc/frontend-shopify.git"
     yup "^1.0.2"
 
-"webstudio-shopify@git+https://github.com/webstudio-co/webstudio-shopify.git":
+"frontend-shopify@git+https://github.com/frontend-inc/frontend-shopify.git":
   version "0.0.4"
-  resolved "git+https://github.com/webstudio-co/webstudio-shopify.git#8b3bc4e8e3afeb78bb96e9ffb0be7ddc5ad0ee25"
+  resolved "git+https://github.com/frontend-inc/frontend-shopify.git#8b3bc4e8e3afeb78bb96e9ffb0be7ddc5ad0ee25"
   dependencies:
     "@apollo/client" "^3.8.9"
     apollo-link-context "^1.0.20"

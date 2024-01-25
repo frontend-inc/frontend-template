@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useApps } from 'hooks'
-import { useMenu } from 'webstudio-mui/hooks'
+import { useMenu } from 'frontend-mui/hooks'
 import { Menu, MenuItem, ListItemIcon, IconButton } from '@mui/material'
 import { useRouter } from 'next/router'
 import AppIcon from 'containers/common/apps/AppIcon'

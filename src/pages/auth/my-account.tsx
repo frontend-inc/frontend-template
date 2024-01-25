@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { LayoutPage, AuthLayout } from 'webstudio-mui/components'
-import { CustomerAccount } from 'webstudio-mui/components/shopify'
+import { LayoutPage, AuthLayout } from 'frontend-mui/components'
+import { CustomerAccount } from 'frontend-mui/components/shopify'
 
 const MyAccountPage: React.FC = () => {
 	return (

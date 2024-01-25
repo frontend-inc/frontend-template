@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { LayoutPage, AuthLayout } from 'webstudio-mui/components'
-import { Address } from 'webstudio-mui/components/shopify'
+import { LayoutPage, AuthLayout } from 'frontend-mui/components'
+import { Address } from 'frontend-mui/components/shopify'
 
 const Addresses: React.FC = () => {
 	return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container } from '@mui/material'
-import { LayoutPage } from 'webstudio-mui/components'
-import { ProductDetailPage } from 'webstudio-mui/components/shopify'
-import { ProductRecommendations } from 'webstudio-mui/components/shopify'
+import { LayoutPage } from 'frontend-mui/components'
+import { ProductDetailPage } from 'frontend-mui/components/shopify'
+import { ProductRecommendations } from 'frontend-mui/components/shopify'
 import { useRouter } from 'next/router'
 
 const ProductDetail: React.FC = () => {

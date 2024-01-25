@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from '@mui/material'
-import { LayoutPage } from 'webstudio-mui/components'
-import { CollectionHero, ProductCollection } from 'webstudio-mui/components/shopify'
+import { LayoutPage } from 'frontend-mui/components'
+import { CollectionHero, ProductCollection } from 'frontend-mui/components/shopify'
 import { useRouter } from 'next/router'
 
 const CollectionDetails: React.FC = () => {

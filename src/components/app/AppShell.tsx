@@ -1,7 +1,7 @@
 import React from 'react'
-import { AppProvider, ApiProvider, AuthProvider } from 'webstudio-mui/context'
+import { AppProvider, ApiProvider, AuthProvider } from 'frontend-mui/context'
 import { AppScripts, AppTheme, AppFonts } from 'components'
-import { ShopifyStore } from 'webstudio-mui/components/shopify'
+import { ShopifyStore } from 'frontend-mui/components/shopify'
 import { API_URL, USER_AUTH_SERVER_PATH } from 'lib/constants'
 
 type AppShellProps = {

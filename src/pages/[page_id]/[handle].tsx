@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { LayoutPage, Fetch } from 'webstudio-mui/components'
-import { ResourceProvider } from 'webstudio-mui/context'
+import { LayoutPage, Fetch } from 'frontend-mui/components'
+import { ResourceProvider } from 'frontend-mui/context'
 
 const Page: React.FC = () => {
 	const router = useRouter()

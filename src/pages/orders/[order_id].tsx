@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import { AuthLayout } from 'webstudio-mui/components'
-import { Order } from 'webstudio-mui/components/shopify'
-import { LayoutPage } from 'webstudio-mui/components'
+import { AuthLayout } from 'frontend-mui/components'
+import { Order } from 'frontend-mui/components/shopify'
+import { LayoutPage } from 'frontend-mui/components'
 
 const OrderPage: React.FC = () => {
 
 	return (
-		<LayoutPage title={'Webstudio'}>
+		<LayoutPage title={'Frontend'}>
 			<AuthLayout>
 				<Order />
 			</AuthLayout>
