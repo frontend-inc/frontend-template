@@ -35,54 +35,54 @@ const AppLayout: React.FC<AppLayoutProps> = (props) => {
 	}
 
 	return (
-    <AppScripts disableAnalytics app={ app }>
-      <AppTheme app={app}>
-        <AppProvider clientUrl={app?.client_url} logo={app?.logo?.url}>
-          <ApiProvider
-            url={API_URL}
-            authCookie={'jwtToken'}
-            apiKey={app?.api_key}
-          >
-            <AuthProvider serverPath={USER_AUTH_SERVER_PATH}>
-              <LayoutLoader loading={loading}>
-                {app?.shopify_storefront_access_token && (
-                  <ShopifyStore
-                    shopUrl={app?.shop_url}
-                    authCookie={'shopToken'}
-                    domain={app?.shopify_domain}
-                    storefrontAccessToken={app?.shopify_storefront_access_token}
-                  >
-                    <LayoutContainer
-                      enableShopify
-                      enableHeader
-                      handleClick={handleMenuClick}
-                      mode={app?.mode}
-                      menuItems={app?.links}
-                      notifications={app?.notifications}
-                      topNav={app?.top_nav == true ? true : false}
-                      showLabels={app?.navbar_labels}
-                      showIcons={app?.navbar_icons}
-                    >
-                      <LayoutPage title={title}>
-                        {children}
-                        <Footer
-                          name={app?.name}
-                          privacyUrl={app?.privacy_url}
-                          termsUrl={app?.terms_url}
-                          socialUrls={app?.social_urls}
-                        />
-                      </LayoutPage>										
-                    </LayoutContainer>
-                  </ShopifyStore>
-                )}
-              </LayoutLoader>
-              <AuthModal logo={app?.logo?.url} />
-            </AuthProvider>
-          </ApiProvider>
-        </AppProvider>
-        <AppFonts app={app} />
-      </AppTheme>
-    </AppScripts>
+		<AppScripts disableAnalytics app={app}>
+			<AppTheme app={app}>
+				<AppProvider clientUrl={app?.client_url} logo={app?.logo?.url}>
+					<ApiProvider
+						url={API_URL}
+						authCookie={'jwtToken'}
+						apiKey={app?.api_key}
+					>
+						<AuthProvider serverPath={USER_AUTH_SERVER_PATH}>
+							<LayoutLoader loading={loading}>
+								{app?.shopify_storefront_access_token && (
+									<ShopifyStore
+										shopUrl={app?.shop_url}
+										authCookie={'shopToken'}
+										domain={app?.shopify_domain}
+										storefrontAccessToken={app?.shopify_storefront_access_token}
+									>
+										<LayoutContainer
+											enableShopify
+											enableHeader
+											handleClick={handleMenuClick}
+											mode={app?.mode}
+											menuItems={app?.links}
+											notifications={app?.notifications}
+											topNav={app?.top_nav == true ? true : false}
+											showLabels={app?.navbar_labels}
+											showIcons={app?.navbar_icons}
+										>
+											<LayoutPage title={title}>
+												{children}
+												<Footer
+													name={app?.name}
+													privacyUrl={app?.privacy_url}
+													termsUrl={app?.terms_url}
+													socialUrls={app?.social_urls}
+												/>
+											</LayoutPage>
+										</LayoutContainer>
+									</ShopifyStore>
+								)}
+							</LayoutLoader>
+							<AuthModal logo={app?.logo?.url} />
+						</AuthProvider>
+					</ApiProvider>
+				</AppProvider>
+				<AppFonts app={app} />
+			</AppTheme>
+		</AppScripts>
 	)
 }
 

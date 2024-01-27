@@ -4,18 +4,15 @@ import { Collections, ProductCollection } from 'frontend-mui/components/shopify'
 import { Container } from '@mui/material'
 
 const LoginPage: React.FC = () => {
-
 	return (
-    <LayoutPage title="Login">
-      <AuthLayout>
-        <Container maxWidth="lg">
-          <ProductCollection
-            handle={'hydrogen'}
-          />
-          <Collections />
-        </Container>
-      </AuthLayout>
-    </LayoutPage>
+		<LayoutPage title="Login">
+			<AuthLayout>
+				<Container maxWidth="lg">
+					<ProductCollection handle={'hydrogen'} />
+					<Collections />
+				</Container>
+			</AuthLayout>
+		</LayoutPage>
 	)
 }
 

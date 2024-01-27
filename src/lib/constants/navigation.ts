@@ -45,13 +45,13 @@ export const LINK_TABS = [{ label: 'Navigation', value: 'links' }]
 
 export const SETTINGS_TABS = [
 	{ label: 'Brand', value: 'brand' },
-	{ label: 'Menu', value: 'links' },  
+	{ label: 'Menu', value: 'links' },
 	{ label: 'Social', value: 'social' },
 	{ label: 'Addons', value: 'addons' },
 	{ label: 'API Keys', value: 'api-keys' },
 	{ label: 'Locales', value: 'locales' },
 	{ label: 'Team', value: 'accounts' },
-  { label: 'Notifications', value: 'notifications' },
+	{ label: 'Notifications', value: 'notifications' },
 ]
 
 export const ADDONS_TABS = [

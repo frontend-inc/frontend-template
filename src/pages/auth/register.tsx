@@ -4,12 +4,9 @@ import { Register } from 'frontend-mui/components/shopify'
 
 const RegisterPage: React.FC = () => {
 	return (
-		<LayoutPage title='Sign In'>
+		<LayoutPage title="Sign In">
 			<AuthLayout>
-				<Register
-					loginUrl={`/auth/login`}
-					redirectUrl={`/`}
-				/>
+				<Register loginUrl={`/auth/login`} redirectUrl={`/`} />
 			</AuthLayout>
 		</LayoutPage>
 	)

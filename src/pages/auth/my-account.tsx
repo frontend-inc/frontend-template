@@ -6,9 +6,7 @@ const MyAccountPage: React.FC = () => {
 	return (
 		<LayoutPage title="My Account">
 			<AuthLayout>
-				<CustomerAccount
-					loginUrl={`/login`}
-				/>
+				<CustomerAccount loginUrl={`/login`} />
 			</AuthLayout>
 		</LayoutPage>
 	)

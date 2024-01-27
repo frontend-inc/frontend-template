@@ -5,13 +5,12 @@ import { ResourceProvider } from 'frontend-mui/context'
 
 const Page: React.FC = () => {
 	const router = useRouter()
-  let { handle } = router.query
-  if(handle == 'page') handle = null;
+	let { handle } = router.query
+	if (handle == 'page') handle = null
 
 	return (
 		<LayoutPage title={'Sample Title'}>
-			<ResourceProvider>		      
-			</ResourceProvider>
+			<ResourceProvider></ResourceProvider>
 		</LayoutPage>
 	)
 }

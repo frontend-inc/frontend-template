@@ -4,7 +4,7 @@ import { Address } from 'frontend-mui/components/shopify'
 
 const Addresses: React.FC = () => {
 	return (
-		<LayoutPage title='Addresses'>
+		<LayoutPage title="Addresses">
 			<AuthLayout>
 				<Address />
 			</AuthLayout>
