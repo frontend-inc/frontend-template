@@ -3669,9 +3669,15 @@ framer-motion@^10.16.15:
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
 
+"frontend-js@git+https://github.com/frontend-inc/frontend-js.git":
+  version "0.0.3"
+  resolved "git+https://github.com/frontend-inc/frontend-js.git#0dee0f4e979e1991147613aedb861a4de5a112c1"
+  dependencies:
+    cookies-next "^2.1.1"
+
 "frontend-mui@git+https://github.com/frontend-inc/frontend-mui.git":
-  version "0.0.23"
-  resolved "git+https://github.com/frontend-inc/frontend-mui.git#59e54105152a827e4d0da49f8eda287763ecff99"
+  version "0.0.33"
+  resolved "git+https://github.com/frontend-inc/frontend-mui.git#365a46c6ee13ce9cd6d44850d55c2abe28ff4b5b"
   dependencies:
     "@apollo/client" "^3.8.9"
     "@emotion/react" "^11.8.2"
@@ -3689,6 +3695,7 @@ framer-motion@^10.16.15:
     compression "^1.7.4"
     copy-to-clipboard "^3.3.1"
     framer-motion "^10.16.15"
+    frontend-js "git+https://github.com/frontend-inc/frontend-js.git"
     frontend-shopify "git+https://github.com/frontend-inc/frontend-shopify.git"
     graphql "^16.8.1"
     history "^4.10.1"

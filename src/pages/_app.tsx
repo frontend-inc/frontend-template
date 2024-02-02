@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react'
-import {
-	AuthProvider,
-	ApiProvider,
+import {	
 	AppProvider,
-	ResourceProvider,
 	ScriptProvider,
 	ThemeProvider,
 } from 'frontend-mui/context'
+import {
+  AuthProvider,
+	ApiProvider,
+  ResourceProvider,
+} from 'frontend-js/context'
 import { ShopifyStore } from 'frontend-mui/components/shopify'
 import { Alert, LayoutContainer } from 'frontend-mui/components'
 import Head from 'next/head'

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { LayoutPage, AuthLayout } from 'frontend-mui/components'
 import { Address } from 'frontend-mui/components/shopify'
 

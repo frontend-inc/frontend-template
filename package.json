@@ -32,6 +32,7 @@
 		"cookies-next": "^2.1.1",
 		"copy-to-clipboard": "^3.3.1",
 		"framer-motion": "^10.16.15",
+		"frontend-js": "git+https://github.com/frontend-inc/frontend-js.git",
 		"frontend-mui": "git+https://github.com/frontend-inc/frontend-mui.git",
 		"frontend-shopify": "git+https://github.com/frontend-inc/frontend-shopify.git",
 		"graphql": "^16.8.1",
