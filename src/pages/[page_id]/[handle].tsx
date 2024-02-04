@@ -1,7 +1,8 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { LayoutPage, Fetch } from 'frontend-mui/components'
-import { ResourceProvider } from 'frontend-mui/context'
+import { LayoutPage } from 'frontend-mui/components'
+import { ResourceProvider } from 'frontend-js/context'
+import { Query } from 'frontend-js/components'
 
 const Page: React.FC = () => {
 	const router = useRouter()
@@ -10,7 +11,9 @@ const Page: React.FC = () => {
 
 	return (
 		<LayoutPage title={'Sample Title'}>
-			<ResourceProvider></ResourceProvider>
+			<ResourceProvider>
+        {' '}
+      </ResourceProvider>
 		</LayoutPage>
 	)
 }

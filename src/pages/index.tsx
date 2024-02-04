@@ -3,7 +3,7 @@ import { AuthLayout, LayoutPage } from 'frontend-mui/components'
 import { Collections, ProductCollection } from 'frontend-mui/components/shopify'
 import { Container } from '@mui/material'
 
-const LoginPage: React.FC = () => {
+const HomePage: React.FC = () => {
 	return (
 		<LayoutPage title="Login">
 			<AuthLayout>
@@ -16,4 +16,4 @@ const LoginPage: React.FC = () => {
 	)
 }
 
-export default LoginPage
+export default HomePage

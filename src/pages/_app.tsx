@@ -57,7 +57,6 @@ export default function NextJs({ Component, pageProps }) {
 							<AuthProvider>
 								<ShopifyStore
 									shopUrl={'/'}
-									authCookie={'shopify-customer-access-token'}
 									domain={SHOPIFY_DOMAIN}
 									storefrontAccessToken={SHOPIFY_STOREFRONT_ACCESS_TOKEN}
 								>
